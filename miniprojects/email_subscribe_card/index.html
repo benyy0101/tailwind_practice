@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Subscribe Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- 
+        ###Background container### 
+        flex: flex items
+        items-center: aligning items in the center(along the y-axis)
+        justify-center: aligning items in the center(along the x-axis)
+        h-screen: fix height to the screen size
+        bg-zinc-700: background color of zinc 700ish
+    -->
+    <div class="flex items-center justify-center h-screen bg-zinc-700">
+
+        <!-- 
+            ###Card###
+            bg-zinc-800: background color of zinc 800
+            p-2: padding of 2 to all the four directions
+            mx-6: margin of 6 to left and right side
+            rounded-2xl: rounded corner
+         -->
+        <div class="bg-zinc-800 p-2 mx-6 rounded-2xl">
+            <!-- 
+                ###Flex container###
+                flex: flex items
+                flex-col: set flex main axis to y-axis
+                md: convert flex-col to flex-row when screen goes to md 
+                rounded-l-xl: rounded corner only at the left side
+             -->
+            <div class="flex flex-col md:flex-row rounded-l-xl">
+                <!-- 
+                    ### Image ### 
+                    object-fit: fit in static file to container
+                    rounded-xl: rounded corner at all four corner 
+                    h-80: fixed height of 80
+                    md:h-64: fixed height of 64 when md
+                    md:rounded-l-xl: rounded corner at left corners when md
+                    hover:scale-105: scaling up to 105% when hovering
+                    transform: add animation
+                    hover:rounded-xl 
+                    duration-200: the time wihch the animation takes
+                -->
+                <img src="assets/image.jpg"
+                    class="object-fit rounded-xl h-80 md:h-64 md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-200">
+
+                <!-- 
+                    ### Content ###
+                -->
+                <div class="p-5 md:p-12">
+                    <!-- 
+                        ### Subtitle ###
+                        font-serif: font style
+                        text-xl: text size
+                        font-medium: font weight or boldness
+                        text-center: text position
+                        text-white: text color
+                        md:text-left: text goes to left when md
+                     -->
+                    <h2 class="font-serif text-xl font-medium text-center text-white md:text-left">
+                        Get diet and fitness tips in your inbox
+                    </h2>
+                    <!--
+                        ### Details ###
+                        max-w-xs: set max width to xs
+                        my-4: margin of 4 on the y-axis  
+                        text-xs: text size
+                        leading-5: line height
+                        tracking-wide: Letter spacing
+                        text-center: text-position
+                        text=white: text color
+                        md:text-left: text container goes to left on medium screen
+                     -->
+                    <p class="max-w-xs my-4 text-xs leading-5 tracking-wide text-center text-white md:text-left">
+                        Eat better and exercise better. Sign up for the Diet&Fitness newsletter.
+                    </p>
+                    <!--
+                    ###Email form ###
+                    flex: flex container
+                    flex-col: set default axis to y-axis
+                    mt-5: margin of 5
+                    space-y-4: space of 4 between flex items along the y-axis
+                    md:flex-row: convert the default axis to x-axis on medium screen
+                    md:space-y-0: space of 0 between flex items along the y-axis
+                    -->
+                    <div class="flex flex-col mt-5 space-y-4 md:space-x-3 md:flex-row md:space-y-0">
+                        <!-- 
+                            ### Input Form ###
+                            p-2: padding of 2
+                            px-4: padding of 4 along x axis
+                            text-center: text position
+                            text-white: text color
+                            bg-zinc-800: background of zinc color with shadow of 800
+                            border: has border
+                            border-zince-600: border color of zinc with shadow of 600
+                            placeholder:text-center: text position of placeholder
+                            md:text-left: align text to left when medium screen
+                            placeholder:md:text-left: align text in the placeholder to left on medium screen
+                            focus:outline-none: no change of outline on focusing
+
+                         -->
+                        <input type="text"
+                            class="p-2 px-4 text-center text-white bg-zinc-800  border border-zinc-600 placholder:text-xs placeholder:text-center md:text-left placeholder:md:text-left focus:outline-none"
+                            placeholder="Enter you email address">
+
+                            <!-- 
+                                ### Subscribe button ###
+                                px-5: padding of 5 to x-axis
+                                py-3: padding of 3 to y-axis
+                                text-xs: text size
+                                rounded-md: rounded corner of medium size
+                                text-zinc-800: text color of zinc with shadow of 800
+                                bg-lime-500: background color of lime with shadow of 500
+                                hover:bg-lime-700: background color of lime with shadow of 700 on hover
+                                hover:text-white: text color on hover 
+                                duration-500: time the transform takes
+                             -->
+                            <button class="px-5 py-3 text-xs rounded-md text-zinc-800 bg-lime-500 hover:bg-lime-700 hover:text-white duration-500">
+                                Subscribe
+                            </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
