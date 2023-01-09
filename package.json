@@ -1,0 +1,20 @@
+{
+  "name": "tailwind_practice",
+  "version": "1.0.0",
+  "description": "<h1>Tailwind Css!</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benyy0101/tailwind_practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benyy0101/tailwind_practice/issues"
+  },
+  "homepage": "https://github.com/benyy0101/tailwind_practice#readme"
+}
