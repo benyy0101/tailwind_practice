@@ -9,9 +9,9 @@
 <h2>To Do's</h2>
 
 - [x] 1. Tailwind Fundamentals            
-- [ ] 2. Mini Projects                     
-- [ ] 3. Clipboard Website                
-- [ ] 4. LoopStudio Website               
+- [X] 2. Mini Projects                     
+- [X] 3. Clipboard Website                
+- [X] 4. LoopStudio Website               
 - [ ] 5. Shortly Website                  
 - [ ] 6. Testmonial Grid Website          
 - [ ] 7. Fylo Website                     
